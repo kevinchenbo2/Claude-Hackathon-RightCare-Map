@@ -60,6 +60,10 @@ router.post('/analyze', async (req, res) => {
     res.json(analysisResult);
 
   } catch (error) {
+    // Log the actual error for debugging
+    console.error('Triage analysis error:', error.message);
+    console.error('Full error:', error);
+
     // Task 3.8: Return 500 for Claude API failures
     // Return user-friendly error messages
     if (error.message.includes('API') || error.message.includes('Anthropic')) {

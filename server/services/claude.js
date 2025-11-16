@@ -2,6 +2,10 @@
 // Healthcare navigation assistant using Claude AI
 
 import Anthropic from '@anthropic-ai/sdk';
+import dotenv from 'dotenv';
+
+// Load environment variables BEFORE initializing Anthropic
+dotenv.config();
 
 // Task 3.1: Initialize client with API key from env
 const anthropic = new Anthropic({
@@ -163,6 +167,7 @@ Please analyze these symptoms and provide guidance on where to seek care.`;
   // Task 3.3: Call Claude API
   const response = await anthropic.messages.create({
     model: 'claude-sonnet-4-20250514',
+    // model: 'claude-3-5-sonnet-20241022',  // Alternative if above fails
     max_tokens: 1024,
     system: SYSTEM_PROMPT,
     messages: [
