@@ -1,0 +1,19 @@
+task_groups:
+  - name: Environment and Project Initialization
+    claude_code_subagent: implementer
+  - name: Express Server Setup
+    claude_code_subagent: implementer
+  - name: Claude API Service
+    claude_code_subagent: implementer
+  - name: React App Structure
+    claude_code_subagent: implementer
+  - name: User Input Form
+    claude_code_subagent: implementer
+  - name: AI Response Visualization
+    claude_code_subagent: implementer
+  - name: Google Maps and Facilities
+    claude_code_subagent: implementer
+  - name: Complete Flow Connection
+    claude_code_subagent: implementer
+  - name: Demo Readiness
+    claude_code_subagent: implementer

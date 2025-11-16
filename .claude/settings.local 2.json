@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(for file in mission.md roadmap.md tech-stack.md)",
+      "Bash(do if [ ! -f \"/Users/kevinchen/Desktop/Claude-Hackathon-RightCare-Map/agent-os/product/$file\" ])",
+      "Bash(then echo \"Error: Missing $file\")",
+      "Bash(else echo \"Created /Users/kevinchen/Desktop/Claude-Hackathon-RightCare-Map/agent-os/product/$file\")",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(npm init:*)",
+      "Bash(npm create:*)",
+      "Bash(npm install:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
